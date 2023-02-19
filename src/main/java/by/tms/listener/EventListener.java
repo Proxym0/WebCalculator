@@ -18,7 +18,11 @@ public class EventListener implements ServletContextListener, HttpSessionIdListe
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

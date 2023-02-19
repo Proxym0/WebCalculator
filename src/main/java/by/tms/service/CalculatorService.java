@@ -10,7 +10,6 @@ import java.util.Optional;
 
 public class CalculatorService implements Calculator {
     private final InMemoryOperationStorage inMemoryOperationStorage =  new InMemoryOperationStorage();
-//    private final InFileOperationStorage inFileOperationStorage = new InFileOperationStorage();
     private final JDBCOperationStorage jdbcOperationStorage = new JDBCOperationStorage();
 
     public Optional<Operation> calculator(Operation operation) {
@@ -20,7 +19,6 @@ public class CalculatorService implements Calculator {
                 double sum = methodSum(operation.getNum1(), operation.getNum2());
                 operation.setResult(sum);
                 inMemoryOperationStorage.save((jdk.dynalink.Operation) operation);
-//                inFileOperationStorage.save(operation);
                 jdbcOperationStorage.save((jdk.dynalink.Operation) operation);
                 return Optional.of(operation);
             }
@@ -28,7 +26,6 @@ public class CalculatorService implements Calculator {
                 double sub = methodSub(operation.getNum1(), operation.getNum2());
                 operation.setResult(sub);
                 inMemoryOperationStorage.save((jdk.dynalink.Operation) operation);
-//                inFileOperationStorage.save(operation);
                 jdbcOperationStorage.save((jdk.dynalink.Operation) operation);
                 return Optional.of(operation);
             }
@@ -36,7 +33,6 @@ public class CalculatorService implements Calculator {
                 double mult = methodMult(operation.getNum1(), operation.getNum2());
                 operation.setResult(mult);
                 inMemoryOperationStorage.save((jdk.dynalink.Operation) operation);
-//                inFileOperationStorage.save(operation);
                 jdbcOperationStorage.save((jdk.dynalink.Operation) operation);
                 return Optional.of(operation);
             }
@@ -44,7 +40,6 @@ public class CalculatorService implements Calculator {
                 double div = methodDiv(operation.getNum1(), operation.getNum2());
                 operation.setResult(div);
                 inMemoryOperationStorage.save((jdk.dynalink.Operation) operation);
-//                inFileOperationStorage.save(operation);
                 jdbcOperationStorage.save((jdk.dynalink.Operation) operation);
                 return Optional.of(operation);
             }

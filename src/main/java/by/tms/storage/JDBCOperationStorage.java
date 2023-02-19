@@ -1,22 +1,22 @@
 package by.tms.storage;
+
 import by.tms.entity.Operation;
+import by.tms.entity.User;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
-public class JDBCOperationStorage implements OperationStorage{
-    private final static String URL="jdbc:postgresql://localhost:5432/postgres";
-    private final static String USER="postgres";
-    private final static String PASSWORD="postgres";
-
-
+public class JDBCOperationStorage implements OperationStorage {
+    private final static String URL = "jdbc:postgresql://localhost:5432/postgres";
+    private final static String USER = "postgres";
+    private final static String PASSWORD = "postgres";
 
     public void save(jdk.dynalink.Operation operation) {
 
     }
-
 
     public void save(Operation operation) {
 
@@ -31,8 +31,6 @@ public class JDBCOperationStorage implements OperationStorage{
             throw new RuntimeException(e);
         }
     }
-
-
 
     public List<Operation> findAll() {
         return null;
