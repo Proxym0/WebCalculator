@@ -1,4 +1,4 @@
-package service;
+package by.tms.service;
 
 public enum Functions {
    SUM,

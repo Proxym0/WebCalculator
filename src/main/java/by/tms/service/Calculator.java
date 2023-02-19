@@ -1,6 +1,6 @@
-package service;
+package by.tms.service;
 
-import entity.Operation;
+import by.tms.entity.Operation;
 
 import java.util.Optional;
 
