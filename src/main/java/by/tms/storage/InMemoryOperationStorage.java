@@ -1,9 +1,11 @@
 package by.tms.storage;
-import jdk.dynalink.Operation;
+
+import by.tms.entity.Operation;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class InMemoryOperationStorage  {
+public class InMemoryOperationStorage {
     List<Operation> operationsList = new ArrayList<>();
 
     public void save(Operation operation) {
@@ -11,7 +13,6 @@ public class InMemoryOperationStorage  {
     }
 
     public List<Operation> findAll() {
-
         return new ArrayList<>(operationsList);
     }
 }

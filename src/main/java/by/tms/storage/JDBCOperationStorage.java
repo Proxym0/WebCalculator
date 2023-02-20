@@ -14,10 +14,6 @@ public class JDBCOperationStorage implements OperationStorage {
     private final static String USER = "postgres";
     private final static String PASSWORD = "postgres";
 
-    public void save(jdk.dynalink.Operation operation) {
-
-    }
-
     public void save(Operation operation) {
 
         try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD)) {

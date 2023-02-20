@@ -6,11 +6,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 
-public class JDBCOUserStorage {
+public class JDBCUserStorage {
     private final static String URL = "jdbc:postgresql://localhost:5432/postgres";
     private final static String USER = "postgres";
     private final static String PASSWORD = "postgres";

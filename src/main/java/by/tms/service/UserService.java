@@ -2,7 +2,7 @@ package by.tms.service;
 
 import by.tms.entity.User;
 import by.tms.storage.InMemoryUsersStorage;
-import by.tms.storage.JDBCOUserStorage;
+import by.tms.storage.JDBCUserStorage;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,13 +10,7 @@ import java.util.Optional;
 public class UserService {
     public static final UserService USER_SERVICE = new UserService();
     InMemoryUsersStorage userStorage = new InMemoryUsersStorage();
-    JDBCOUserStorage storage=new JDBCOUserStorage();
-
-
-    public void create(User user) {
-        storage.saveUser(user);
-        userStorage.save(user);
-    }
+    JDBCUserStorage storage = new JDBCUserStorage();
 
     public Optional<User> findByUserName(String username) {
         return userStorage.byUserName(username);
@@ -35,5 +29,4 @@ public class UserService {
     public List<User> findAll() {
         return userStorage.getUsersList();
     }
-
 }

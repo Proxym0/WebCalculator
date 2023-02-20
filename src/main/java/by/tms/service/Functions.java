@@ -1,9 +1,8 @@
 package by.tms.service;
 
 public enum Functions {
-   SUM,
-   SUB,
-   MULT,
-   DIV
-
-   }
+    SUM,
+    SUB,
+    MULT,
+    DIV
+}

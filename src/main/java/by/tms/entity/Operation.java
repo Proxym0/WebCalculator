@@ -1,5 +1,4 @@
 package by.tms.entity;
-
 import java.util.Objects;
 
 public class Operation {
