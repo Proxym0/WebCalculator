@@ -18,15 +18,18 @@ public class UserService {
 
     public Optional<User> create(String userName, String name, String password) {
         User user = new User(userName, name, password);
-        Optional<Boolean> save = userStorage.save(user);
-        storage.saveUser(user);
-        if (save.isEmpty() || !save.get()) {
+        List<String> allUsername = storage.findAllUsername();
+        if (allUsername.contains(userName)) {
             return Optional.empty();
         }
+        storage.saveUser(user);
         return Optional.of(user);
     }
 
+
     public List<User> findAll() {
-        return userStorage.getUsersList();
+        return storage.findAll();
     }
+
+
 }

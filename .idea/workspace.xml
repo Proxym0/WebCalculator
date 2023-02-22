@@ -9,19 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e49e78ff-0cc2-4b7f-8a2d-0763c425a1cd" name="Changes" comment="add 19.02.23">
+    <list default="true" id="e49e78ff-0cc2-4b7f-8a2d-0763c425a1cd" name="Changes" comment="add 20.02.23(add WebCalculator)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tms/storage/Constanta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/entity/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/entity/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/filter/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/filter/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/service/CalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/service/CalculatorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/service/Functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/service/Functions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/storage/InMemoryOperationStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/storage/InMemoryOperationStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/storage/InMemoryUsersStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/storage/InMemoryUsersStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/storage/JDBCOUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/storage/JDBCUserStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/storage/JDBCOperationStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/storage/JDBCOperationStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/storage/OperationStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/storage/OperationStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/web/WebCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/web/WebCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/storage/JDBCUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/storage/JDBCUserStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/tms/web/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/tms/web/RegistrationServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +196,7 @@
       <workItem from="1676700976019" duration="13471000" />
       <workItem from="1676739058750" duration="7625000" />
       <workItem from="1676786867272" duration="15500000" />
-      <workItem from="1676828207416" duration="11437000" />
+      <workItem from="1676828207416" duration="19674000" />
     </task>
     <task id="LOCAL-00001" summary="add 19.02.23">
       <created>1676788401584</created>
@@ -212,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676788401584</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add 20.02.23(add WebCalculator)">
+      <created>1676923046878</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676923046878</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +231,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add 19.02.23" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 19.02.23" />
+    <MESSAGE value="add 20.02.23(add WebCalculator)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 20.02.23(add WebCalculator)" />
   </component>
 </project>
