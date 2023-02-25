@@ -47,7 +47,7 @@ public class CalculatorService implements Calculator {
     }
 
     public List<Operation> showHistory() {
-        return inMemoryOperationStorage.findAll();
+        return jdbcOperationStorage.findAll();
     }
 
     public double methodSum(double a, double b) {
